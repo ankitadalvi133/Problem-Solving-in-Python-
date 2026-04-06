@@ -1,0 +1,9 @@
+num = int(input("Enter a No : "))
+a = num%10
+print("last no of given number : ",a)
+
+
+
+op : 
+Enter a No : 4563626
+last no of given number :  6
