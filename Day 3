@@ -1,0 +1,94 @@
+'''
+wap to check whether a no palindrom or not
+
+no = input('enter a no : ')
+if no == no[::-1]:
+	print('no is palindrom')
+else:
+	print('no is not palindrom')
+	
+op :
+enter a no : 565
+no is palindrom
+
+enter a no : 637
+no is not palindrom
+
+[Program finished]
+
+#wap to count the no of digits
+
+no = input('enter a no : ')
+A =[]
+count = 0
+for i in no:
+	if i:
+		count +=1
+print(count)
+
+
+op :
+enter a no : 234567890
+9
+
+[Program finished]
+
+wap to sum of entire no
+
+no = int(input('enter a no : '))
+sum = 0
+
+while no > 0:
+	sum +=no % 10
+	no = no//10
+print('sum of all digit inside the no :',sum)
+
+op:
+enter a no : 56
+sum of all digit inside the no : 11
+
+[Program finished]	
+
+wap to find the bigest no
+
+no = int(input('enter a no : '))
+max_digit = 0
+
+while no > 0:
+	a = no %10
+	if max_digit < a:
+		max_digit = a
+	else:
+		pass
+	no = no // 10
+print('maxumum no is : ',max_digit)
+
+op:
+enter a no : 5678
+maxumum no is :  8
+
+[Program finished]
+
+'''
+no = int(input('enter a no :'))
+count = 0
+
+while no>0:
+	a = no % 10
+	if a %2 ==0:
+		count +=1
+	no = no // 10
+print('event no of given string',count)
+
+op:
+enter a no :4567888
+event no of given string 5
+
+[Program finished]
+	
+	
+
+
+
+
+	
