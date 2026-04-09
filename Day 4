@@ -1,0 +1,142 @@
+'''
+wap to find the min value of giv3n digit
+
+no = int(input('enter a no : '))
+min_val = 0
+
+while no > 0:
+	a = no % 10
+	no = no // 10
+	b = no % 10
+	if a > b:
+		min_val = b
+	else:
+		min_val = a
+	no = no // 10
+print(min_val)
+
+wap to find odd no of given no
+
+no = int(input('enter a no : '))
+count = 0
+
+while no > 0:
+	a = no % 10
+	if a %  2 != 0:
+		count += 1
+	else:
+		pass
+	no = no // 10
+print('odd no of given string',count)
+
+op:
+enter a no : 57478
+odd no of given string 3
+
+[Program finished]
+
+----------------------------------------------------------------------
+
+wap to multiply each digit in the number
+
+no = int(input('enter a no : '))
+mul = 1
+while no > 0:
+	a = no % 10
+	mul = mul*a
+	no = no // 10
+print('multiplicatuon :',mul)
+
+op:
+enter a no : 543
+multiplicatuon : 60
+
+[Program finished]
+
+wap to find the largest and second largest digit inside the given no
+
+no = int(input('enter a no : '))
+largest = 0
+second = 0
+
+while no > 0:
+	digit = no % 10
+	if digit > largest:
+		second = largest
+		largest = digit
+	elif digit > second and digit != largest:
+		second = digit
+	else:
+		pass
+	no = no // 10
+print(largest)
+print(second)
+
+wap to check given no is armstrong or not
+				
+no = int(input('enter a no : '))
+temp = no
+sum = 0
+cube = 1
+
+while no > 0:
+	digit = no % 10
+	cube = digit*digit*digit
+	sum += cube
+	no = no // 10
+print('sum of cube',sum)
+if sum == temp:
+	print(temp,'no is armstrong')
+else:
+	print(temp,'no is not armstrong')
+
+op:
+enter a no : 153
+sum of cube 153
+153 no is armstrong
+
+enter a no : 123
+sum of cube 36
+123 no is not armstrong
+
+[Program finished]
+
+wap to check given no is perfect or not
+
+no = int(input('enter a no : '))
+sum = 0
+
+for i in range(1,no):
+	if no % i == 0:
+		sum += i
+print(sum)
+if sum == no:
+	print(no,'is perfect no')
+else:
+	print(no,'is not perfect no')
+
+op:
+enter a no : 6
+6
+6 is perfect no
+
+enter a no : 54
+66
+54 is not perfect no
+
+[Program finished]
+
+wap to find the factorial of no
+
+no = int(input('enter a no : '))
+fact = 1
+
+for i in range(1,no+1):
+	fact = fact*i
+print('factorial of',no,'is : ',fact)
+
+op: 
+enter a no : 5
+factorial of 5 is :  120
+
+[Program finished]'''
