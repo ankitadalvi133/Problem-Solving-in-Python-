@@ -1,0 +1,114 @@
+'''
+#wap to print the pqttern
+
+no =int(input('enter a no : '))
+for i in range(1,no+1):
+	for j in range(1,i+1):
+		print(j,end=' ')
+	print()
+	
+op:
+enter a no : 7
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+1 2 3 4 5 6
+1 2 3 4 5 6 7
+
+[Program finished]
+
+no =int(input('enter a no : '))
+for i in range(no,0,-1):
+	for j in range(1,i+1):
+		print(j,end=' ')
+	print()
+	
+op:
+enter a no : 7
+1 2 3 4 5 6 7
+1 2 3 4 5 6
+1 2 3 4 5
+1 2 3 4
+1 2 3
+1 2
+1
+
+[Program finished]
+
+
+no = int(input('enter a no : '))
+for i in range(1,no+1):
+	for i in range(1,i+1):
+		print('*',end=' ')
+	print()
+
+op:
+enter a no : 7
+*
+* *
+* * *
+* * * *
+* * * * *
+* * * * * *
+* * * * * * *
+
+[Program finished]
+
+Q. wap to reverse the no 
+
+no = int(input('enter a no : '))
+rev = 0
+while no > 0:
+	digit = no % 10
+	rev = rev * 10 + digit
+	no = no // 10
+print('reverse no :',rev)
+
+op:
+enter a no : 6543
+reverse no : 3456
+
+[Program finished]
+
+Q. to check given no are armstrong or not
+
+no = int(input('enter a no : '))
+temp = no
+sum = 0
+
+while no > 0:
+	digit = no % 10
+	sum += digit ** 3
+	no = no // 10
+print(sum)
+if sum == temp:
+	print('no is armstrong')
+else:
+	print('no is no armstrong')	
+	
+op:
+enter a no : 153
+153
+no is armstrong
+
+[Program finished]
+
+
+
+no = int(input('enter a no : '))
+fact = 1
+
+for i in range(1,no+1):
+	fact *=i
+print('factorial of given no :',fact)
+
+op:
+enter a no : 7
+factorial of given no : 5040
+
+[Program finished]'''
+
+
+	
