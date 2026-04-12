@@ -1,0 +1,91 @@
+'''
+Q. wap to check given string is armstrong or not
+
+str = input('Enter a string : ')
+
+if str == str[::-1]:
+	print('string are palindrom')
+else:
+	print('string are not palindrom')
+	
+op:
+Enter a string : madam
+string are palindrom
+
+Enter a string : abc
+string are not palindrom
+
+[Program finished]
+
+
+Q. count the no of vowels in given string
+
+str = input('Enter a string : ')
+vowels = ['a','e','i','o','u']
+count=0
+
+for i in str:
+	if i in vowels:
+		count += 1
+	else:
+		pass
+print('count the no of vowels:',count)
+
+op:
+Enter a string : ankita
+count the no of vowels: 3
+
+[Program finished]
+
+
+Q. find the largest no in list
+
+list = [2,45,3,68,8]
+larger = 0
+
+for i in list:
+	if i > larger:
+		larger = i
+print('larger No : ',larger)
+
+op:
+larger No :  68
+
+[Program finished]
+
+Q. remove the duplicqte lettter in the string
+
+
+str = input('Enter a string : ')
+result = ''
+for i in str:
+	if i not in result:
+		result = result+i
+	else:
+		pass
+print('remove the duplicate letter in the string : ',result)
+
+
+op:
+Enter a string : programming
+remove the duplicate letter in the string :  progamin
+
+[Program finished]
+
+
+str = input('Enter a string : ')
+
+for i in str:
+	if str.count(i)==1:
+		print('character : ',i)
+		
+op:
+Enter a string : ankita
+character :  n
+character :  k
+character :  i
+character :  t
+
+[Program finished]'''
+
+
