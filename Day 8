@@ -1,0 +1,76 @@
+'''
+Q. reverse the sentence
+
+str = input('Enter a string : ')
+word = str.split()
+list = word[::-1]
+result = '  '.join(list)
+print(result)
+
+op:
+Enter a string : I love python
+python  love  I
+
+[Program finished]
+
+Q. remove dublicate elements in the list
+
+list = [1,2,4,2,5,4,3]
+A = []
+
+for i in  list:
+	if i not in A:
+		A.append(i)
+	else:
+		pass
+print('sorted list : ',A)
+
+op:
+sorted list :  [1, 2, 4, 5, 3]
+
+[Program finished]
+
+Q. count max charracter in the word
+
+str = input('Enter a string : ')
+
+maxcount = 0
+maxchar = ''
+
+for i in str:
+	count = str.count(i)
+	
+	if count > maxcount:
+		maxcount = count
+		maxchar = i
+print('max no of letter : ',maxchar)
+
+
+op:
+Enter a string : ankita
+max no of letter :  a
+
+[Program finished]
+
+
+list =[1,3,2,6,4,8,7]
+
+even =[]
+
+for i in list:
+	if i % 2 == 0:
+		even.append(i)
+print('even no list : ',even)
+
+op:
+even no list :  [2, 6, 4, 8]
+
+[Program finished]'''
+
+
+str = input('Enter a string : ')
+
+for i in str:
+	count = str.count(i)
+	
+	print(i,count)
