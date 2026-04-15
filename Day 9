@@ -1,0 +1,57 @@
+'''
+Q. find the gcd of two number
+
+import math
+
+a = 12
+b = 18
+
+print('gcd of',a,'&',b,'  : ',math.gcd(a,b))
+
+op:
+gcd of 12 & 18   :  6
+
+[Program finished]
+
+
+Q. find the secind largest element in list
+
+list = [10,30,3,2]
+
+large = 0
+small = 0
+
+for i in list:
+	if i > large:
+		small = large
+		large = i
+	elif  i > small:
+		small = i
+	
+print('second largest element in list : ',small)
+
+op:
+second largest element in list :  10
+
+[Program finished]
+
+
+Q. check the given string are anagram or not
+
+a = input('Enter a first string : ')
+b = input('Enter a second string : ')
+
+if len(a) != len(b):
+	print('string are not Anagram"')
+else:
+	if sorted(a.lower()) == sorted(b.lower()):
+		print('string are Anagram"')
+	else:
+		print('string are not Anagram')
+
+op:
+Enter a first string : listen
+Enter a second string : slient
+string are Anagram"
+
+[Program finished]'''
